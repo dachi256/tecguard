@@ -1,0 +1,41 @@
+.filter {
+  display: flex;
+  align-items: center;
+}
+
+.filter-item {
+  margin-right: 20px;
+}
+
+.filter-item select {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #aaa;
+  border-radius: 5px;
+  appearance: none;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-item select:hover,
+.filter-item select:focus {
+  border-color: #666; 
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+  background-color: #f7f7f7; 
+}
+
+/* Custom arrow for the select element */
+.filter-item select {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpolygon%20fill%3D%22%23666%22%20points%3D%226%209%200.5%203%2011.5%203%22/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: right 10px center; 
+  background-size: 12px 12px; 
+}
+
+/* Ensure the custom arrow is visible and not clipped */
+.filter-item select {
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  padding-right: 30px; 
+}

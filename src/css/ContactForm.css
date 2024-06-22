@@ -1,0 +1,100 @@
+.contact-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 600px;
+}
+
+.contact-container h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-container p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+.contact-container p:last-of-type { 
+  margin-bottom: 30px;
+}
+
+.contact-container a {
+  color: #6086b0;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.contact-container a:hover, .contact-container a:focus {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  height: 120px;
+}
+
+.form-group .checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+}
+
+.form-group .checkbox-label input[type='checkbox'] {
+  margin-right: 8px;
+  width: auto;
+}
+
+button[type='submit'] {
+  background-color: #222835;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button[type='submit']:hover, button[type='submit']:focus {
+  background-color: #3c465d;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+      padding: 20px;
+  }
+}

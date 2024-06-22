@@ -1,0 +1,69 @@
+.price-slider-container {
+  position: relative;
+  width: 100%;
+  padding: 5px;
+}
+
+.price-range-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.price-thumb-label {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  color: black;
+  background-color: #fff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.MuiSlider-thumb {
+  background-color: #222835;
+  width: 14px;
+  height: 14px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.MuiSlider-thumb:hover,
+.MuiSlider-thumb:focus {
+  background-color: #222835;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.MuiSlider-rail {
+  height: 4px;
+  border-radius: 2px;
+  background-color: #ccc;
+}
+
+.MuiSlider-track {
+  height: 4px;
+  border-radius: 2px;
+  background-color: #222835;
+}
+
+.MuiSlider-colorPrimary {
+  color: #222835; 
+}
+
+.MuiSlider-colorPrimary .MuiSlider-thumb {
+  color: #222835;
+}
+
+.MuiSlider-colorPrimary .MuiSlider-thumbColorPrimary,
+.MuiSlider-colorPrimary .MuiSlider-thumbColorSecondary {
+  border-color: #222835; 
+}
+
+.MuiSlider-colorPrimary .MuiSlider-track {
+  background-color: #222835; 
+}

@@ -1,0 +1,164 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  background-color: #222;
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-header h1 {
+  font-size: 24px;
+}
+
+.app-header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.app-header nav ul li {
+  margin-left: 20px;
+}
+
+.app-header nav ul li:first-child {
+  margin-left: 0;
+}
+
+.app-header nav ul li a {
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.app-header nav ul li a:hover {
+  color: #ffcc00;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.signup-link,
+.login-link {
+  color: #fff;
+  font-size: 18px;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+}
+
+.signup-link:hover,
+.login-link:hover {
+  color: #ffcc00;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info span {
+  margin-right: 10px;
+}
+
+.user-info button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.user-info button:hover {
+  color: #ffcc00;
+}
+
+.language-switcher {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.language-switcher i {
+  margin-right: 5px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.language-switcher select {
+ 
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+
+ 
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
+
+
+.language-switcher select::-ms-expand {
+  display: none;
+}
+
+.language-switcher::after {
+  content: '\25BC';
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #fff;
+}
+
+
+.language-switcher select:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.app-main {
+  flex: 1;
+  padding: 20px;
+}
+
+.app-footer {
+  background-color: #222;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+}
+
+.social-links {
+  margin-bottom: 10px;
+}
+
+.social-links a {
+  color: #fff;
+  margin-right: 20px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ffcc00;
+}
+
